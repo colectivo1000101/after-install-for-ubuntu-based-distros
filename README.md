@@ -1,0 +1,2 @@
+# after-install
+after install
