@@ -1,7 +1,7 @@
 # after-install
 This is a script for post instalations, we recommend that before running this script you read it so that you know what this does to your computer, and see what it installs. But that's your choice ;)                                   
 
-It's written in a simple for people that have has just started using linux, or that are not used to scripting, so that they can understand what this script does, and can easily use and modify it according to their needs.	       
+It's written in a simple for people that have just started using linux, or that are not used to scripting, so that they can understand what this script does, and can easily use and modify it according to their needs.	       
 
 This script is compatible with any Ubuntu based distro (ex:Lubuntu, Xubuntu, Linux Mint, Ubuntu Mate, Elementary OS, and many others), except KUBUNTU, sorry...
 
