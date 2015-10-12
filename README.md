@@ -17,5 +17,5 @@ Hope this script is usefull to you!
 
 from the terminal run the command: git clone https://github.com/allnamesaretakeningithub/after-install
 
-<b/>To execute this script, run from source folder the command:<b/>
+<b/>To execute this script, run from source folder the command:<b/><p/>
 bash ./script.sh
