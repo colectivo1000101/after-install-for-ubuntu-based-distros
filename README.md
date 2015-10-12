@@ -13,9 +13,9 @@ made by zxecco namely the capacity to automatacally accept ttf-mscore-fonts EULA
 
 Hope this script is usefull to you!
 
-<b>To download this scrip and other files:<b>
+<b/>To download this scrip and other files:<b/><p/>
 
 from the terminal run the command: git clone https://github.com/allnamesaretakeningithub/after-install
 
-#To execute this script, run from source folder the command:
+<b/>To execute this script, run from source folder the command:<b/>
 bash ./script.sh
