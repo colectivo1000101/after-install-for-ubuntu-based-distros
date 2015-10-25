@@ -76,7 +76,7 @@ sudo apt-get install --yes openshot	                	#Video editor, simple
 sudo apt-get install --yes avidemux			        #Another video editor, but a bit more complicated
 sudo apt-get install --yes vlc				        #The best media player around
 sudo apt-get install --yes dvdrip		                #To convert DVD movies in AVI video files
-sudo apt-get install --yes winff ffmpeg	            		#To convert multimedia files into other formats
+sudo apt-get install --yes winff	            		#To convert multimedia files into other formats
 sudo apt-get install --yes cheese				#To use your webcam to make videos and take pictures
 #Sound
 sudo apt-get install --yes audacity				#One of the best audio files editor around
@@ -95,12 +95,12 @@ sudo apt-get install --yes libdvdread4				#To read multimedia DVD
 sudo /usr/share/doc/libdvdread4/install-css.sh	      		#To automatically crack multimedia DVD restrictions, such as DRM so that your VLC and other media players can read all media DVD's
 
 #To remove. This part removes aplications that are redundant.  
-sudo apt-get --yes purge leafpad scratch kate mousepad		#text editors similar to wordpad, not necessary because geany is installed
-sudo apt-get --yes purge gnome-mplayer totem xine parole	#video players, not necessary because vlc is already installed
+sudo apt-get --yes purge leafpad scratch* kate* mousepad*	#text editors similar to wordpad, not necessary because geany is installed
+sudo apt-get --yes purge gnome-mplayer* totem* xine* parole*	#video players, not necessary because vlc is already installed
 sudo apt-get --yes purge abiword*				#word aplication, not necessary because libreoffice is already installed
 sudo apt-get --yes purge gnumeric*				#spreadsheet aplication, not necessary because libreoffice is already installed
-sudo apt-get --yes purge gmusicbrowser				#music player, not necessary because clementine is already installed
-sudo apt-get --yes purge chromium-browser* midori		#open source version of google chrome. You already have firefox! ;)
+sudo apt-get --yes purge gmusicbrowser*				#music player, not necessary because clementine is already installed
+sudo apt-get --yes purge chromium-browser* midori*		#open source version of google chrome. You already have firefox! ;)
 sudo apt-get --yes purge sylpheed claws-mail kmail geary	#email clients, not necessary because thunderbird is automatically installed when you installed enigmail in the begining of the script
 Sudo apt-get --yes purge guvcview				#Make videos with webcam, not necessary because cheese is already installed
 
