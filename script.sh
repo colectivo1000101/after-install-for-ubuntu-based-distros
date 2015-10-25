@@ -36,7 +36,7 @@ sudo sed 's/# deb/deb/' -i /etc/apt/sources.list
 #To use the most updated software sources when installing things
 sudo apt-get update
 #Utilities
-sudo apt-get install --yes gedit			        #A simple text editor		
+sudo apt-get install --yes geany			        #A simple text editor		
 sudo apt-get install --yes usb-creator-gtk		    	#To create liveUSB's so that you can install linux on other computers
 sudo apt-get install --yes clamtk				#Anti-virus for linux, not that linux needs it, it's just in case you want to check files made in Microsoft Windows before sending them someone else
 sudo apt-get install --yes catfish				#To search files in your hard drive
@@ -59,7 +59,7 @@ sudo apt-get install --yes linphone				#Makes encrypted VOIP calls between peopl
 sudo apt-get install --yes tor					#To navigate anonymously in the internet
 sudo apt-get install --yes tor-browser				#To navigate anonymously in the internet
 #Office applications
-sudo apt-get install --yes fontsopensymbol			#open souce fonts for libreoffice and ohter programs
+sudo apt-get install --yes fontsopensymbol			#open souce fonts for libreoffice and other programs
 sudo apt-get install --yes pdfchain				#To edit PDF's
 sudo apt-get install --yes pdfshuffler				#To split and merge PDF files and rearrange the order of the pages
 sudo apt-get install --yes libreoffice				#Office application, contains: spreadsheet, word editor, presentations maker and a lot more. Can read and edit .doc, .docx, xls, xlsx, ppt and pptx
@@ -95,7 +95,7 @@ sudo apt-get install --yes libdvdread4				#To read multimedia DVD
 sudo /usr/share/doc/libdvdread4/install-css.sh	      		#To automatically crack multimedia DVD restrictions, such as DRM so that your VLC and other media players can read all media DVD's
 
 #To remove. This part removes aplications that are redundant.  
-sudo apt-get --yes purge leafpad scratch kate mousepad		#text editors similar to wordpad, not necessary because gedit is installed
+sudo apt-get --yes purge leafpad scratch kate mousepad		#text editors similar to wordpad, not necessary because geany is installed
 sudo apt-get --yes purge gnome-mplayer totem xine parole	#video players, not necessary because vlc is already installed
 sudo apt-get --yes purge abiword*				#word aplication, not necessary because libreoffice is already installed
 sudo apt-get --yes purge gnumeric*				#spreadsheet aplication, not necessary because libreoffice is already installed
@@ -122,5 +122,5 @@ read -r -p "Reboot your computer now? [Y/n]" response
  if [[ $response =~ ^(yes|y| ) ]]; then
 clear ; echo "Rebooting..." ; sleep 4s ; sudo reboot
 else
-clear ; echo "Exiting the terminal..." sleep 4s ; exit
+clear ; echo "Exiting the terminal..." ; sleep 4s ; exit
 fi
