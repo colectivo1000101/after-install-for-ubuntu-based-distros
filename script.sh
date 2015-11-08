@@ -2,8 +2,6 @@ echo "Hi, $USER"
 
 echo "Detecting your operating system"
 
-sleep 1s
-
 #To detect which ubuntu based distro you are using. 
 
 #Xubuntu
@@ -49,6 +47,7 @@ sudo apt-get install --yes firefox				#Some distros do not have it, can you beli
 sudo apt-get install --yes icedtea-plugin			#Java plugin for firefox to run websites that use JAVA, like the Portuguese IRS website
 sudo apt-get install --yes transmission-gtk			#To manage torrent downloads
 sudo apt-get install --yes skype				#A piece of crap sofware, but people use it a lot...
+sudo apt-get install --yes zenmap nmap				#To analyse network security
 #Encryption tools
 sudo apt-get install --yes pgpgpg   				#To 
 sudo apt-get install --yes enigmail 				#To allow thunderbird to encrypt and read encrypted emails
