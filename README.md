@@ -15,7 +15,8 @@ Hope this script is usefull to you!
 
 <p><b/>To download this scrip and other files:<b/><p/>
 
-from the terminal run the command: git clone https://github.com/allnamesaretakeningithub/after-install
+from the terminal run the command:
+git clone https://github.com/allnamesaretakeningithub/after-install-for-ubuntu-based-distros
 
 <b/>To execute this script, run from source folder the command:<b/><p/>
 bash ./script.sh
