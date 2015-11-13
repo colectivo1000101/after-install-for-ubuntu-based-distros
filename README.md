@@ -1,4 +1,4 @@
-# after-install-for-ubuntu-based-distros
+# after install for ubuntu based distros
 This is a script for post installations. It automatically installs some of the most common programs in Linux installations; libreoffice, vlc, codecs, flash, thunderbird, clementine, audio and video editing tools, etc.
 
 We recommend that before running this script you read it so that you know what this does to your computer, and see what it installs. But that's your choice ;)                                   
