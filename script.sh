@@ -1,38 +1,39 @@
 echo "Hi, $USER"
 
-echo "Detecting your operating system"
-
-#To detect which ubuntu based distro you are using. 
-
-#Xubuntu
-if (dpkg --get-selections | grep -q xubuntu); then
-	VERSAUM="XUBUNTU"
-fi
-#Lubuntu
-if (dpkg --get-selections | grep -q lubuntu); then
-	VERSAUM="LUBUNTU"
-fi
-#Mint
-if (dpkg --get-selections | grep -q mint); then
-	VERSAUM="MINT"
-fi
-#Ubuntu (Default)
-if [ -z "$VERSAUM" ]; then
-	VERSAUM="UBUNTU"
-fi
-
-echo "You are using $VERSAUM, or a $VERSAUM based distro"
-
-echo "Starting this script"
-
-sleep 4s
-
 echo "Please type your password" 
 
 #To open all software repositories in your ubuntu based version, so that you can install Skype, flash, etc
 sudo sed 's/# deb/deb/' -i /etc/apt/sources.list
+
 #To use the most updated software sources when installing things
 sudo apt-get update
+
+#To accept EULA for MS fonts (Arial, Times new roman, etc.)
+sudo echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true |sudo debconf-set-selections
+
+#To detect which ubuntu based distro you are using, and install the correct restriced-extras package according to your ubuntu based distro, with all the audio and video codecs, Microsoft fonts in libreoffice such as Arial, Times New Roman, flash, etc.
+
+#Xubuntu
+if (dpkg --get-selections | grep -q xubuntu); then
+	sudo apt-get install --yes xubuntu-restricted-extras
+fi
+#Lubuntu
+if (dpkg --get-selections | grep -q lubuntu); then
+	sudo apt-get install --yes lubuntu-restricted-extras gcc make
+fi
+#Mint
+if (dpkg --get-selections | grep -q mint); then
+	sudo apt-get install --yes ubuntu-restricted-extras
+fi
+#Kubuntu
+if (dpkg --get-selections | grep -q kubuntu); then
+	sudo apt-get install --yes kubuntu-restricted-extras
+fi
+#Ubuntu (Default)
+if [ -z "$VERSAUM" ]; then
+	sudo apt-get install --yes ubuntu-restricted-extras
+fi
+
 #Utilities
 sudo apt-get install --yes geany			        #A simple text editor		
 sudo apt-get install --yes usb-creator-gtk		    	#To create liveUSB's so that you can install linux on other computers
@@ -84,14 +85,9 @@ sudo apt-get install --yes clementine				#Music player and audio library manager
 sudo apt-get install --yes brasero				#To burn DVD's
 sudo apt-get install --yes dvd95				#To convert DVD format
 sudo apt-get install --yes isomaster				#To create .iso files
-
-#To accept EULA for MS fonts (Arial, Times new roman, etc.)
-sudo echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true |sudo debconf-set-selections
-
-#To install audio and video codecs, Microsoft fonts in libreoffice such as Arial, Times New Roman, flash
-sudo apt-get install --yes *ubuntu-restricted-extras 		#Codec's, mp3, and so on
 sudo apt-get install --yes libdvdread4				#To read multimedia DVD
 sudo /usr/share/doc/libdvdread4/install-css.sh	      		#To automatically crack multimedia DVD restrictions, such as DRM so that your VLC and other media players can read all media DVD's
+
 
 #To remove. This part removes aplications that are redundant.  
 sudo apt-get --yes purge leafpad scratch* kate* mousepad*	#text editors similar to wordpad, not necessary because geany is installed
@@ -101,19 +97,30 @@ sudo apt-get --yes purge gnumeric*				#spreadsheet aplication, not necessary bec
 sudo apt-get --yes purge gmusicbrowser*				#music player, not necessary because clementine is already installed
 sudo apt-get --yes purge chromium-browser* midori*		#open source version of google chrome. You already have firefox! ;)
 sudo apt-get --yes purge sylpheed claws-mail kmail geary	#email clients, not necessary because thunderbird is automatically installed when you installed enigmail in the begining of the script
-Sudo apt-get --yes purge guvcview				#Make videos with webcam, not necessary because cheese is already installed
+sudo apt-get --yes purge guvcview				#Make videos with webcam, not necessary because cheese is already installed
 
 #system updates. Now that everything we want is installed, just update the system and clean the system from unecessary packages, and make sure everything is ok.
 
-sudo apt-get --yes install -f && sudo apt-get --yes dist-upgrade
-sudo apt-get --yes autoremove
-sudo apt-get --yes clean 
+clear #clear all the text in the terminal so that the next message is easier to read
+
+echo "Hello $USER"
+
+echo "All instalations are complete."
+echo "Would you like to do a system update to upgrade your applications to the latest version? If not, then just press 'n' to exit this script (you can do these updates later if you want)"
+
+read -r -p "Update your system now? [Y/n]" response
+ response=${response,,} 
+ if [[ $response =~ ^(yes|y| ) ]]; then
+clear ; echo "Updating..." ; sleep 2s ; sudo apt-get --yes install -f ; sudo apt-get --yes dist-upgrade ; sudo apt-get --yes autoremove ; sudo apt-get --yes clean 
+else
+clear ; echo "Exiting the terminal..." ; sleep 4s ; exit ; exit
+fi
 
 clear #clear all the text in the terminal so that the next message is easier to read
 
 echo "Hello again $USER"
 
-echo "It's finished!!! All instalations are complete."
+echo "It's finished!!! All instalations and updates are complete."
 echo "We recomend you to reboot your computer to finish the updates."
 
 read -r -p "Reboot your computer now? [Y/n]" response
