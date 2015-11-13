@@ -9,14 +9,18 @@ You can see the full list of Ubuntu based distros here:
 https://upload.wikimedia.org/wikipedia/commons/7/79/UbuntuFamilyTree1210.svg
  
 Parts of this script were based in  https://github.com/zx-ecco/Skunkworks/blob/master/xubuntu-14.04-desktop-install-fest.sh
-made by zxecco namely the capacity to automatacally accept ttf-mscore-fonts EULA and parts made by Luis e Pedro namely recognition of xubuntu and Lubuntu, Linux Mint
+made by zxecco namely the capacity to automatically accept ttf-mscore-fonts EULA and parts made by Luis e Pedro namely recognition of xubuntu and Lubuntu, Linux Mint
 
-Hope this script is usefull to you!
 
-<p><b/>To download this scrip and other files:<b/><p/>
+<p><b/>To run this script in your computer:<b/><p/>
 
-from the terminal run the command:
-git clone https://github.com/allnamesaretakeningithub/after-install-for-ubuntu-based-distros
+1 - Copy this command:
+wget https://raw.githubusercontent.com/allnamesaretakeningithub/after-install-for-ubuntu-based-distros/master/script.sh && bash ./script.sh
 
-<b/>To execute this script, run from source folder the command:<b/><p/>
-bash ./script.sh
+2 - Open a terminal (ctrl+alt+t), paste the command in the terminal by pressing CTRL+SHIFT+v
+
+3 - Press enter
+
+After this your computer will automatically download and start this script.
+
+Hope this script is usefull to you! 
