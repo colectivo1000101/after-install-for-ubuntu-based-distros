@@ -25,10 +25,6 @@ fi
 if (dpkg --get-selections | grep -q mint); then
 	sudo apt-get install --yes ubuntu-restricted-extras
 fi
-#Kubuntu
-if (dpkg --get-selections | grep -q kubuntu); then
-	sudo apt-get install --yes kubuntu-restricted-extras
-fi
 #Ubuntu (Default)
 if [ -z "$VERSAUM" ]; then
 	sudo apt-get install --yes ubuntu-restricted-extras
