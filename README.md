@@ -12,7 +12,7 @@ Parts of this script were based in  https://github.com/zx-ecco/Skunkworks/blob/m
 made by zxecco namely the capacity to automatically accept ttf-mscore-fonts EULA and parts made by Luis e Pedro namely recognition of xubuntu and Lubuntu, Linux Mint
 
 
-<p><b/>To run this script in your computer:<b/><p/>
+#To run this script in your computer:
 
 1 - Copy this command:
 wget https://raw.githubusercontent.com/allnamesaretakeningithub/after-install-for-ubuntu-based-distros/master/script.sh && bash ./script.sh
