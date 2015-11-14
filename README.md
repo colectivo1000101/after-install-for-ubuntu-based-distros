@@ -23,4 +23,6 @@ wget https://raw.githubusercontent.com/allnamesaretakeningithub/after-install-fo
 
 After this your computer will automatically download and start this script.
 
+USE IT AT YOUR OWN RISK, THERE IS NO WARRANTY!
+
 Hope this script is usefull to you! 
