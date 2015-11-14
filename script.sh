@@ -89,10 +89,8 @@ sudo apt-get install --yes libdvdread4				#To read multimedia DVD
 sudo /usr/share/doc/libdvdread4/install-css.sh	      		#To automatically crack multimedia DVD restrictions, such as DRM so that your VLC and other media players can read all media DVD's
 
 #To remove. This part removes aplications that are redundant.  
-sudo apt-get --yes purge leafpad				#text editor similar to wordpad, not necessary because geany is installed
-sudo apt-get --yes purge scratch*				#text editor similar to wordpad, not necessary because geany is installed
-sudo apt-get --yes purge kate*					#text editor similar to wordpad, not necessary because geany is installed
-sudo apt-get --yes purge mousepad*				#text editor similar to wordpad, not necessary because geany is installed
+
+sudo apt-get --yes purge scratch*				#text editor similar to wordpad, not necessary because geany is installed is installed
 sudo apt-get --yes purge gnome-mplayer*				#video players, not necessary because vlc is already installed
 sudo apt-get --yes purge totem*					#video players, not necessary because vlc is already installed
 sudo apt-get --yes purge parole*				#video players, not necessary because vlc is already installed
@@ -107,6 +105,8 @@ sudo apt-get --yes claws-mail 					#email clients, not necessary because thunder
 sudo apt-get --yes kmail					#email clients, not necessary because thunderbird is automatically installed when you installed enigmail in the begining of the script
 sudo apt-get --yes geary					#email clients, not necessary because thunderbird is automatically installed when you installed enigmail in the begining of the script
 sudo apt-get --yes purge guvcview				#Make videos with webcam, not necessary because cheese is already installed
+
+sudo apt-get --yes autoremove ; sudo yes apt-get clean 		#Now that redundant programs are eliminated do a system cleaning
 
 #system updates. Now that everything we want is installed, just update the system and clean the system from unecessary packages, and make sure everything is ok.
 
@@ -137,5 +137,5 @@ read -r -p "Reboot your computer now? [Y/n]" response
  if [[ $response =~ ^(yes|y| ) ]]; then
 clear ; echo "Rebooting..." ; sleep 2s ; sudo reboot
 else
-clear ; echo "Exiting the terminal..." ; sleep 4s ; exit
+clear ; echo "Exiting the terminal..." ; sleep 2s ; exit ; exit
 fi
