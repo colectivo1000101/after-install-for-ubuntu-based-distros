@@ -86,16 +86,15 @@ sudo /usr/share/doc/libdvdread4/install-css.sh	      		#To automatically crack m
 
 #To remove. This part removes aplications that are redundant.  
 
-sudo apt-get --yes purge scratch*				#text editor similar to wordpad, not necessary because geany is installed is installed
-sudo apt-get --yes purge gnome-mplayer*				#video players, not necessary because vlc is already installed
-sudo apt-get --yes purge totem*					#video players, not necessary because vlc is already installed
-sudo apt-get --yes purge parole*				#video players, not necessary because vlc is already installed
-sudo apt-get --yes purge xine* 					#video players, not necessary because vlc is already installed
-sudo apt-get --yes purge abiword*				#word aplication, not necessary because libreoffice is already installed
-sudo apt-get --yes purge gnumeric*				#spreadsheet aplication, not necessary because libreoffice is already installed
-sudo apt-get --yes purge gmusicbrowser*				#music player, not necessary because clementine is already installed
-sudo apt-get --yes purge chromium-browser*			#open source version of google chrome. You already have firefox! ;)
-sudo apt-get --yes purge midori*				#browser. You already have firefox! ;)
+sudo apt-get --yes purge scratch				#text editor similar to wordpad, not necessary because geany is installed is installed
+sudo apt-get --yes purge totem					#video players, not necessary because vlc is already installed
+sudo apt-get --yes purge parole					#video players, not necessary because vlc is already installed
+sudo apt-get --yes purge xine 					#video players, not necessary because vlc is already installed
+sudo apt-get --yes purge abiword				#word aplication, not necessary because libreoffice is already installed
+sudo apt-get --yes purge gnumeric				#spreadsheet aplication, not necessary because libreoffice is already installed
+sudo apt-get --yes purge gmusicbrowser				#music player, not necessary because clementine is already installed
+sudo apt-get --yes purge chromium-browser			#open source version of google chrome. You already have firefox! ;)
+sudo apt-get --yes purge midori					#browser. You already have firefox! ;)
 sudo apt-get --yes purge sylpheed				#email clients, not necessary because thunderbird is automatically installed when you installed enigmail in the begining of the script
 sudo apt-get --yes claws-mail 					#email clients, not necessary because thunderbird is automatically installed when you installed enigmail in the begining of the script
 sudo apt-get --yes kmail					#email clients, not necessary because thunderbird is automatically installed when you installed enigmail in the begining of the script
