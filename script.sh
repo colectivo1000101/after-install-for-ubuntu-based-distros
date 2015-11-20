@@ -46,7 +46,6 @@ sudo apt-get install --yes transmission-gtk			#To manage torrent downloads
 sudo apt-get install --yes skype				#A piece of crap sofware, but people use it a lot...
 sudo apt-get install --yes zenmap nmap				#To analyse network security
 #Encryption tools
-sudo apt-get install --yes pgpgpg   				#To 
 sudo apt-get install --yes enigmail 				#To allow thunderbird to encrypt and read encrypted emails
 sudo apt-get install --yes gnupg				#To encrypt files
 sudo apt-get install --yes cryptsetup				#LUKS (Linux Unified Key System) implementation, allows to create encrypted USB's, encrypted folders, encrypted disc partitions
@@ -60,6 +59,12 @@ sudo apt-get install --yes pdfchain				#To edit PDF's
 sudo apt-get install --yes pdfshuffler				#To split and merge PDF files and rearrange the order of the pages
 sudo apt-get install --yes libreoffice				#Office application, contains: spreadsheet, word editor, presentations maker and a lot more. Can read and edit .doc, .docx, xls, xlsx, ppt and pptx
 sudo apt-get install --yes libreoffice-pdfimport		#for libreoffice to import PDF's
+sudo apt-get install --yes libreoffice-templates		#Templates for Libreoffice (Writer, calc, Impress)
+sudo apt-get install --yes libreoffice-style-crystal		#Themes for Libreoffice
+sudo apt-get install --yes libreoffice-style-oxygen		#Themes for Libreoffice
+sudo apt-get install --yes libreoffice-style-tango		#Themes for Libreoffice
+sudo apt-get install --yes libreoffice-style-sifr		#Themes for Libreoffice
+sudo apt-get install --yes libreoffice-style-breeze		#Themes for Libreoffice
 sudo apt-get install --yes calibre				#To organize and read your Ebooks 
 sudo apt-get install --yes comix				#To read comic books (.cbr files)
 #Graphics
@@ -97,7 +102,6 @@ sudo apt-get --yes purge chromium-browser			#open source version of google chrom
 sudo apt-get --yes purge midori					#browser. You already have firefox! ;)
 sudo apt-get --yes purge sylpheed				#email clients, not necessary because thunderbird is automatically installed when you installed enigmail in the begining of the script
 sudo apt-get --yes claws-mail 					#email clients, not necessary because thunderbird is automatically installed when you installed enigmail in the begining of the script
-sudo apt-get --yes kmail					#email clients, not necessary because thunderbird is automatically installed when you installed enigmail in the begining of the script
 sudo apt-get --yes geary					#email clients, not necessary because thunderbird is automatically installed when you installed enigmail in the begining of the script
 sudo apt-get --yes purge guvcview				#Make videos with webcam, not necessary because cheese is already installed
 
