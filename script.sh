@@ -101,7 +101,7 @@ sudo apt-get --yes purge gmusicbrowser				#music player, not necessary because c
 sudo apt-get --yes purge chromium-browser			#open source version of google chrome. You already have firefox! ;)
 sudo apt-get --yes purge midori					#browser. You already have firefox! ;)
 sudo apt-get --yes purge sylpheed				#email clients, not necessary because thunderbird is automatically installed when you installed enigmail in the begining of the script
-sudo apt-get --yes purge claws-mail 					#email clients, not necessary because thunderbird is automatically installed when you installed enigmail in the begining of the script
+sudo apt-get --yes purge claws-mail 				#email clients, not necessary because thunderbird is automatically installed when you installed enigmail in the begining of the script
 sudo apt-get --yes purge geary					#email clients, not necessary because thunderbird is automatically installed when you installed enigmail in the begining of the script
 sudo apt-get --yes purge guvcview				#Make videos with webcam, not necessary because cheese is already installed
 
