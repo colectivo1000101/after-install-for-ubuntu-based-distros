@@ -101,11 +101,11 @@ sudo apt-get --yes purge gmusicbrowser				#music player, not necessary because c
 sudo apt-get --yes purge chromium-browser			#open source version of google chrome. You already have firefox! ;)
 sudo apt-get --yes purge midori					#browser. You already have firefox! ;)
 sudo apt-get --yes purge sylpheed				#email clients, not necessary because thunderbird is automatically installed when you installed enigmail in the begining of the script
-sudo apt-get --yes claws-mail 					#email clients, not necessary because thunderbird is automatically installed when you installed enigmail in the begining of the script
-sudo apt-get --yes geary					#email clients, not necessary because thunderbird is automatically installed when you installed enigmail in the begining of the script
+sudo apt-get --yes purge claws-mail 					#email clients, not necessary because thunderbird is automatically installed when you installed enigmail in the begining of the script
+sudo apt-get --yes purge geary					#email clients, not necessary because thunderbird is automatically installed when you installed enigmail in the begining of the script
 sudo apt-get --yes purge guvcview				#Make videos with webcam, not necessary because cheese is already installed
 
-sudo apt-get --yes autoremove ; sudo yes apt-get clean 		#Now that redundant programs are eliminated do a system cleaning
+sudo apt-get --yes autoremove ; sudo apt-get --yes clean 	#Now that redundant programs are eliminated do a system cleaning
 
 #system updates. Now that everything we want is installed, just update the system and clean the system from unecessary packages, and make sure everything is ok.
 
