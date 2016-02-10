@@ -1,5 +1,9 @@
 echo "Hi, $USER"
 
+echo "Starting this script..."
+
+sleep 1s
+
 echo "Please type your password" 
 
 #To open all software repositories in your ubuntu based version, so that you can install Skype, flash, etc
