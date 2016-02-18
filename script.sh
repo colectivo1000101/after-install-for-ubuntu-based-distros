@@ -11,6 +11,9 @@ echo "Please type your password"
 #To open all software repositories in your ubuntu based version, so that you can install Skype, flash, etc
 sudo sed 's/# deb/deb/' -i /etc/apt/sources.list
 
+echo "This whole should take around 20 minutes."
+sleep 5s
+
 #To use the most updated software sources when installing things
 sudo apt-get update
 
@@ -57,10 +60,11 @@ sudo apt-get install --yes gnupg				#To encrypt files
 sudo apt-get install --yes cryptsetup				#LUKS (Linux Unified Key System) implementation, allows to create encrypted USB's, encrypted folders, encrypted disc partitions
 sudo apt-get install --yes pidgin pidgin-otr 			#Allows encription of instant messages (Gtalk, MSN, IRC, XMPP) using Pidgin
 sudo apt-get install --yes linphone				#Makes encrypted VOIP calls between people (not compatible with SKYPE)
-sudo apt-get install --yes tor					#To navigate anonymously in the internet
-sudo apt-get install --yes tor-browser				#To navigate anonymously in the internet
+sudo add-apt-repository --yes ppa:webupd8team/tor-browser       #TOR Browser. To navigate anonymously in the internet
+sudo apt-get update --yes					#TOR Browser. To navigate anonymously in the internet
+sudo apt-get install --yes tor-browser				#TOR Browser. To navigate anonymously in the internet
 #Office applications
-sudo apt-get install --yes fontsopensymbol			#open souce fonts for libreoffice and other programs
+sudo apt-get install --yes fontsopensymbol			#open source fonts for libreoffice and other programs
 sudo apt-get install --yes pdfchain				#To edit PDF's
 sudo apt-get install --yes pdfshuffler				#To split and merge PDF files and rearrange the order of the pages
 sudo apt-get install --yes libreoffice				#Office application, contains: spreadsheet, word editor, presentations maker and a lot more. Can read and edit .doc, .docx, xls, xlsx, ppt and pptx
