@@ -64,7 +64,7 @@ sudo add-apt-repository --yes ppa:webupd8team/tor-browser       #TOR Browser. To
 sudo apt-get update --yes					#TOR Browser. To navigate anonymously in the internet
 sudo apt-get install --yes tor-browser				#TOR Browser. To navigate anonymously in the internet
 #Office applications
-sudo apt-get install --yes fontsopensymbol			#open source fonts for libreoffice and other programs
+sudo apt-get install --yes fonts-opensymbol			#open source fonts for libreoffice and other programs
 sudo apt-get install --yes pdfchain				#To edit PDF's
 sudo apt-get install --yes pdfshuffler				#To split and merge PDF files and rearrange the order of the pages
 sudo apt-get install --yes libreoffice				#Office application, contains: spreadsheet, word editor, presentations maker and a lot more. Can read and edit .doc, .docx, xls, xlsx, ppt and pptx
