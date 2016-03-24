@@ -11,7 +11,7 @@ echo "Please type your password"
 #To open all software repositories in your ubuntu based version, so that you can install Skype, flash, etc
 sudo sed 's/# deb/deb/' -i /etc/apt/sources.list
 
-echo "This should take around 20 minutes."
+echo "This should take around 20 minutes. So go for some coffe or a beer..."
 sleep 5s
 
 #To use the most updated software sources when installing things
