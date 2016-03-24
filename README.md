@@ -15,7 +15,7 @@ made by zxecco namely the capacity to automatically accept ttf-mscore-fonts EULA
 #To run this script in your computer:
 
 1 - Copy this command:
-wget https://raw.githubusercontent.com/allnamesaretakeningithub/after-install-for-ubuntu-based-distros/master/script.sh && bash ./script.sh
+wget https://raw.githubusercontent.com/colectivo1000101/after-install-for-ubuntu-based-distros/master/script.sh && bash ./script.sh
 
 2 - Open a terminal (ctrl+alt+t), paste the command in the terminal by pressing CTRL+SHIFT+v
 
