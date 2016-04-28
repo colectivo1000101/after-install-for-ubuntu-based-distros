@@ -1,3 +1,5 @@
+#!/bin/bash
+
 clear #clear all the text in the terminal so that the next message is easier to read
 
 echo "Hi, $USER"
