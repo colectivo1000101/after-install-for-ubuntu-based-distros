@@ -24,21 +24,30 @@ sudo echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula sele
 
 #To detect which ubuntu based distro you are using, and install the correct restriced-extras package according to your ubuntu based distro, with all the audio and video codecs, Microsoft fonts in libreoffice such as Arial, Times New Roman, flash, etc.
 
+desktop=$(echo $DESKTOP_SESSION | tr '[:upper:]' '[:lower:]')
+echo " Desktop in use: $desktop"
+sleep 2s
+
 #Xubuntu
-if (dpkg --get-selections | grep -q xubuntu); then
+if [ "$desktop" = "xubuntu" ]; then
 	sudo apt-get install --yes xubuntu-restricted-extras
 fi
 #Lubuntu
-if (dpkg --get-selections | grep -q lubuntu); then
-	sudo apt-get install --yes lubuntu-restricted-extras gcc make
+if [ "$desktop" = "lubuntu" ]; then
+	sudo apt-get install --yes lubuntu-restricted-extras
 fi
 #Mint
-if (dpkg --get-selections | grep -q mint); then
+if [ "$desktop" = "mint" ]); then
 	sudo apt-get install --yes ubuntu-restricted-extras
 fi
 #Ubuntu (Default)
-if [ -z "$VERSAUM" ]; then
+if [ "$desktop" = "ubuntu" ]
 	sudo apt-get install --yes ubuntu-restricted-extras
+fi
+ 
+if [ "$desktop" = "lubuntu" ]
+then 
+    sudo apt-get install --yes gcc make
 fi
 
 #Utilities
