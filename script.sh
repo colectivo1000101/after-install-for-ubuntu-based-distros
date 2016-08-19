@@ -124,17 +124,8 @@ sudo apt-get --yes purge claws-mail 				#email clients, not necessary because th
 sudo apt-get --yes purge geary					#email clients, not necessary because thunderbird is automatically installed when you installed enigmail in the begining of the script
 sudo apt-get --yes purge guvcview				#Make videos with webcam, not necessary because cheese is already installed
 
-sudo apt-get --yes autoremove ; sudo apt-get --yes clean 	#Now that redundant programs are eliminated do a system cleaning
-
-#system updates. Now that everything we want is installed, just update the system and clean the system from unecessary packages, and make sure everything is ok.
-
-clear #clear all the text in the terminal so that the next message is easier to read
-
-echo "Hello $USER"
-echo "Allmost done"
-sleep 5s
-#To clean the system
-sudo apt-get --yes install -f ; sudo apt-get --yes autoremove ; sudo apt-get --yes clean 
+#Now that redundant programs are eliminated do a system cleaning
+sudo apt-get --yes -f install ; sudo apt-get --yes autoremove ; sudo apt-get --yes clean
 
 clear #clear all the text in the terminal so that the next message is easier to read
 
