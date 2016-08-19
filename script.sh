@@ -18,7 +18,7 @@ sleep 5s
 
 #To use the most updated software sources when installing things
 sudo apt-get update
-
+sudo apt-get --yes dist-upgrade
 #To accept EULA for MS fonts (Arial, Times new roman, etc.)
 sudo echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true |sudo debconf-set-selections
 
@@ -63,7 +63,7 @@ sudo apt-get install --yes unrar xz-utils p7zip-full		#To create and extract Zip
 sudo apt-get install --yes firefox				#Some distros do not have it, can you belive that!!!
 sudo apt-get install --yes icedtea-plugin			#Java plugin for firefox to run websites that use JAVA, like the Portuguese IRS website
 sudo apt-get install --yes transmission-gtk			#To manage torrent downloads
-sudo apt-get install --yes skype				#A piece of crap sofware, but people use it a lot...
+sudo apt-get install --yes skype				#A piece of crap software, but people use it a lot...
 sudo apt-get install --yes zenmap nmap				#To analyse network security
 #Encryption tools
 sudo apt-get install --yes enigmail 				#To allow thunderbird to encrypt and read encrypted emails
@@ -116,8 +116,6 @@ sudo apt-get --yes purge scratch				#text editor similar to wordpad, not necessa
 sudo apt-get --yes purge totem					#video players, not necessary because vlc is already installed
 sudo apt-get --yes purge parole					#video players, not necessary because vlc is already installed
 sudo apt-get --yes purge xine 					#video players, not necessary because vlc is already installed
-sudo apt-get --yes purge abiword				#word aplication, not necessary because libreoffice is already installed
-sudo apt-get --yes purge gnumeric				#spreadsheet aplication, not necessary because libreoffice is already installed
 sudo apt-get --yes purge gmusicbrowser				#music player, not necessary because clementine is already installed
 sudo apt-get --yes purge chromium-browser			#open source version of google chrome. You already have firefox! ;)
 sudo apt-get --yes purge midori					#browser. You already have firefox! ;)
@@ -133,17 +131,10 @@ sudo apt-get --yes autoremove ; sudo apt-get --yes clean 	#Now that redundant pr
 clear #clear all the text in the terminal so that the next message is easier to read
 
 echo "Hello $USER"
-
-echo "All instalations are complete."
-echo "Would you like to do a system update to upgrade your applications to the latest version? If not, then just press 'n' to exit this script (you can do these updates later if you want)"
-
-read -r -p "Update your system now? [Y/n]" response
- response=${response,,} 
- if [[ $response =~ ^(yes|y| ) ]]; then
-clear ; echo "Updating..." ; sleep 2s ; sudo apt-get --yes install -f ; sudo apt-get --yes dist-upgrade ; sudo apt-get --yes autoremove ; sudo apt-get --yes clean 
-else
-clear ; echo "Exiting the terminal..." ; sleep 2s ; exit ; exit
-fi
+echo "Allmost done"
+sleep 5s
+#To clean the system
+sudo apt-get --yes install -f ; sudo apt-get --yes autoremove ; sudo apt-get --yes clean 
 
 clear #clear all the text in the terminal so that the next message is easier to read
 
