@@ -74,6 +74,10 @@ sudo apt-get install --yes linphone				#Makes encrypted VOIP calls between peopl
 sudo add-apt-repository --yes ppa:webupd8team/tor-browser       #TOR Browser. To navigate anonymously in the internet
 sudo apt-get update --yes					#TOR Browser. To navigate anonymously in the internet
 sudo apt-get install --yes tor-browser				#TOR Browser. To navigate anonymously in the internet
+sudo add-apt-repository --yes ppa:nilarimogard/webupd8 		#Youtube-dlg. To Download videos from youtube and others	
+sudo apt-get update --yes					#Youtube-dlg. To Download videos from youtube and others
+sudo apt-get install --yes youtube-dl  				#Youtube-dlg. To Download videos from youtube and others
+sudo apt-get install --yes youtube-dlg 				#Youtube-dlg. To Download videos from youtube and others
 #Office applications
 sudo apt-get install --yes fonts-opensymbol			#open source fonts for libreoffice and other programs
 sudo apt-get install --yes pdfchain				#To edit PDF's
