@@ -59,6 +59,7 @@ sudo apt-get install --yes rdesktop				#To remotely access other computers
 sudo apt-get install --yes synaptic aptitude gdebi		#To manage software packages, and install and remove aplications
 sudo apt-get install --yes gparted gnome-disk-utility   	#To manage, create and format disk, USB or SD card partitions
 sudo apt-get install --yes unrar xz-utils p7zip-full		#To create and extract Zip, RAR files
+sudo apt-get install --yes gufw ufw				#graphical manager for your firewall
 #Internet
 sudo apt-get install --yes firefox				#Some distros do not have it, can you belive that!!!
 sudo apt-get install --yes icedtea-plugin			#Java plugin for firefox to run websites that use JAVA, like the Portuguese IRS website
